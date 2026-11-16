@@ -1,0 +1,22 @@
+# Backend + AI/ML dependencies (Python 3.10+)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+SQLAlchemy>=2.0.25
+alembic>=1.13
+pydantic>=2.6
+pydantic-settings>=2.2
+email-validator>=2.1
+python-jose[cryptography]>=3.3
+passlib[bcrypt]>=1.7.4
+bcrypt==4.0.1            # pinned: newer bcrypt releases break passlib's version check
+python-multipart>=0.0.9
+PyMySQL>=1.1
+cryptography>=42         # required by PyMySQL for MySQL 8 caching_sha2_password auth
+httpx>=0.27              # LLM API client + FastAPI TestClient
+scikit-learn>=1.4
+pandas>=2.1
+numpy>=1.26
+joblib>=1.3
+
+# Testing
+pytest>=8.0
